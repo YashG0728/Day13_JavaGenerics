@@ -1,11 +1,11 @@
 package javagenerics;
 
-public class MaximumInteger {
-    public static void MaxIntValue(int x, int y, int z){
-        Integer num1 = x;
-        Integer num2 = y;
-        Integer num3 = z;
-        Integer max = num1;
+public class MaximumFloats {
+    public static void MaxFloatValue(float x, float y, float z){
+        Float num1 = x;
+        Float num2 = y;
+        Float num3 = z;
+        Float max = num1;
         if(num2.compareTo(max)>0) {
             max = num2;
         }
@@ -16,13 +16,13 @@ public class MaximumInteger {
     }
 
     public static void main(String[] args) {
-        MaxIntValue(8,5,18);
+        MaxFloatValue(8.0f,5.0f,18.5f);
         System.out.println("Test Case 1 keeping max at position 1");
-        MaxIntValue(18,5,8);
+        MaxFloatValue(18.5f,5.0f,8.0f);
         System.out.println("Test Case 2 keeping max at position 2");
-        MaxIntValue(5,18,8);
+        MaxFloatValue(5.0f,18.5f,8.0f);
         System.out.println("Test Case 3 keeping max at position 3");
-        MaxIntValue(8,5,18);
+        MaxFloatValue(8.0f,5.0f,18.5f);
     }
 }
 
